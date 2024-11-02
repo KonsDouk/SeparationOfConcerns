@@ -1,0 +1,5 @@
+- title: PHP | Laravel Calculator API
+- shortDescription: Implement calculator logic and configure API routes, validation etc.
+- defaultTime: 60 min
+- tags: PHP, PHPUnit, Laravel
+- difficulty: MEDIUM
