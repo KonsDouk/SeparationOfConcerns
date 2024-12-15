@@ -16,3 +16,7 @@ use App\Http\Controllers\CalculatorController;
 */
 
 // @TODO define routing
+
+// test?a={a}&b={b}
+
+Route::get('/add', 'App\Http\Controllers\CalculatorController@add')->middleware('auth.premium');

@@ -11,12 +11,14 @@ class CalculatorService
     public function add(int $a, int $b): int
     {
         // @TODO implement
+        return $a + $b;
         return 0;
     }
 
     public function subtract(int $a, int $b): int
     {
         // @TODO implement
+        return $a - $b;
         return 0;
     }
 
@@ -29,12 +31,15 @@ class CalculatorService
     public function divide(int $a, int $b): float
     {
         // @TODO implement
-        return 0.;
+        if ($b === 0) throw new DivisionByZeroException('Cannot divide with zero');
+        return $a/$b;
     }
 
     public function modulo(int $a, int $b): int
     {
         // @TODO implement
+        if ($b === 0) throw new DivisionByZeroException('Cannot divide with zero');
+        return $a % $b;
         return 0;
     }
 }
